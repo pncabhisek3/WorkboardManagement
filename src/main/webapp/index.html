@@ -1,0 +1,51 @@
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+<title>WR</title>
+
+<link rel="stylesheet" href="./Styles.css" />
+<link rel="stylesheet" href="./workboard/app-module/approotStyle.css" />
+
+
+<script src="https://code.jquery.com/jquery-3.4.1.js"
+	crossorigin="anonymous"
+	integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="></script>
+<script
+	src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.8/angular.min.js"></script>
+<script src="./angular-route.js"></script>
+<script src="./workboard/app-module/approotComponent.js"></script>
+<!-- Html5 mode routing to remove hash from url -->
+<!-- <base href="/" /> -->
+</head>
+<body ng-app="appRoot">
+	<div class="app-root-wrapper">
+		<table class="layout">
+			<thead class="header">
+				<tr>
+					<th colspan="2">Header</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td class="nav">
+						<ul>
+							<!-- If html4mode is not enabled use href='#!/dashboard' -->
+							<li class="linker"><a href="#!/dashboard">Dashboard</a></li>
+							<li class="linker"><a href="#!/student">Student</a></li>
+							<li class="linker"><a href="#!/students">Students</a></li>
+						</ul>
+					</td>
+					<td class="content" ng-view></td>
+				</tr>
+			</tbody>
+			<tfoot class="footer">
+				<tr>
+					<th colspan="2">footer</th>
+				</tr>
+			</tfoot>
+		</table>
+	</div>
+</body>
+</html>

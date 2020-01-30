@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  font-family: sans-serif;
+}
+.layout {
+  border: none;
+  width: 100%;
+  height: 100%;
+}
+
+.header,
+.footer {
+  background-color: lightseagreen;
+  color: white;
+}
+
+.header th,
+.footer th {
+  padding: 1em;
+}
+
+.nav {
+  background-color: whitesmoke;
+  width: 15em;
+  vertical-align: top;
+}
+
+.content {
+  vertical-align: top;
+}
+
+.nav ul {
+  list-style: none;
+  padding: 0.5em;
+}
+
+li {
+  padding: 5px;
+  border-bottom: 1px solid white;
+}
+
+li a {
+  text-decoration: none;
+}
+
+li:hover {
+  background-color: gainsboro;
+}
