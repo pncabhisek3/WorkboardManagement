@@ -17,5 +17,15 @@ public class StudentMvcController {
 	public String students() {
 		return "students-module/studentsTemplate";
 	}
+	
+	@GetMapping(value = "/student")
+	public String student() {
+		return "student-module/studentTemplate";
+	}
+	
+	@GetMapping(value = "/studentEdit")
+	public String studentEdit() {
+		return "student-module/studentEditTemplate";
+	}
 
 }
