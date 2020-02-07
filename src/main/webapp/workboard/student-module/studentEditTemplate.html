@@ -1,0 +1,93 @@
+<div class="jumbotron jumbotron-fluid jumbotron-student">
+	<div class="container">
+		<h3 class="display-4">No Record Found With Searched Id</h3>
+		<a class="link" href="#!/student" style="text-decoration: none;">Create New Record with searched ID first.</a>
+	</div>
+</div>
+
+<div class="student-wrapper" ng-controller="studentEditController">
+	<div class="student-header stick">
+		<div class="student-header-txt">
+			<span class="span-txt1">Workboard Student</span> <span
+				class="span-txt2">{{student.studentId}}</span>
+		</div>
+		<div class="student-header-action">
+			<button type="submit" class="btn btn-primary btn-sm"
+				ng-click="updateStudent()">Update</button>
+		</div>
+	</div>
+
+	<div class="student-form-content">
+		<form>
+			<div class="form-row">
+				<div class="form-group col-md-6">
+					<label>Name</label> <input type="text"
+						class="form-control form-control-sm"
+						ng-model="student.studentName" name="studentName"
+						placeholder="Student Name">
+				</div>
+				<div class="form-group col-md-6">
+					<label>RollNumber</label> <input type="number"
+						class="form-control form-control-sm" ng-model="student.rollNumber"
+						name="rollNumber" placeholder="Roll Number">
+				</div>
+			</div>
+
+			<div class="form-row">
+				<div class="form-group col-md-6">
+					<label>Score</label> <input type="text"
+						class="form-control form-control-sm" ng-model="student.score"
+						name="score" placeholder="Score">
+				</div>
+				<div class="form-group col-md-6">
+					<label>Rank</label> <input type="number"
+						class="form-control form-control-sm"
+						ng-model="student.studentRank" name="rank" placeholder="Rank">
+				</div>
+			</div>
+
+			<div class="form-group">
+				<h2>Student Address</h2>
+			</div>
+
+			<div class="form-group">
+				<label for="inputAddress">Address 1</label> <input type="text"
+					ng-model="student.address.addressLine1"
+					class="form-control form-control-sm" id="inputAddress">
+			</div>
+			<div class="form-group">
+				<label for="inputAddress2">Address 2</label> <input type="text"
+					ng-model="student.address.addressLine2"
+					class="form-control form-control-sm" id="inputAddress2">
+			</div>
+
+			<div class="form-row">
+				<div class="form-group col-md-6">
+					<label>Country</label> <input type="text"
+						class="form-control form-control-sm"
+						ng-model="student.address.country" name="Country">
+				</div>
+				<div class="form-group col-md-6">
+					<label>State</label> <input type="text"
+						class="form-control form-control-sm"
+						ng-model="student.address.state" name="State">
+				</div>
+				<div class="form-group col-md-2">
+					<label>Pincode</label> <input type="number"
+						class="form-control form-control-sm"
+						ng-model="student.address.pincode" name="pincode">
+				</div>
+			</div>
+
+			<div class="form-group">
+				<div class="form-check">
+					<input class="form-check-input" type="checkbox" id="gridCheck"
+						ng-model="student.address.isPermanentAddress"> <label
+						class="form-check-label" for="gridCheck"> Is Permanent
+						Address? </label>
+				</div>
+			</div>
+
+		</form>
+	</div>
+</div>

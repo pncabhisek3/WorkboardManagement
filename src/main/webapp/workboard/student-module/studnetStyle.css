@@ -1,0 +1,30 @@
+.student-wrapper{
+    border: 1px solid gainsboro; border-radius: 3px;
+}
+
+.student-header {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  border-bottom: 1px solid gainsboro;
+  background-color: whitesmoke;
+}
+.student-header-txt{
+    display: inherit; margin-left: 5px; flex-direction: column;
+}
+
+.span-txt2{
+    font-size: 0.7em;
+}
+
+.student-header-action{
+    margin: 5px;
+}
+
+form{
+    margin: 5px;
+}
+
+.student-header-action{
+    margin: 5px;
+}
