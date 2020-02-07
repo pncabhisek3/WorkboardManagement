@@ -11,6 +11,8 @@ import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
+import javax.persistence.Temporal;
+import javax.persistence.TemporalType;
 
 @Entity
 @Table(name = "student")
@@ -24,14 +26,15 @@ public class Student implements Serializable {
 	private String studentName;
 	private Float score;
 	private String rollNumber;
+	@Temporal(TemporalType.TIMESTAMP)
 	private Date joinDate;
 	private Integer studentRank;
 
-	@OneToMany//(mappedBy = "studentId")
+	@OneToMany
 	@JoinColumn(name = "student_id")
 	private Set<Address> addresses;
 
-	@OneToMany//(mappedBy = "studentId")
+	@OneToMany
 	@JoinColumn(name = "student_id")
 	private Set<Subject> subjects;
 

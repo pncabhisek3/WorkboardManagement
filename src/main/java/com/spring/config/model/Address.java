@@ -26,8 +26,6 @@ public class Address implements Serializable {
 	private String state;
 	private String country;
 
-//	@ManyToOne//(targetEntity = Student.class)
-//	@JoinColumn(name = "student_id")
 	@Column(name = "student_id")
 	private Integer studentId;
 
